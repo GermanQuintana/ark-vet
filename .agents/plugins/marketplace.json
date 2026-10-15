@@ -1,0 +1,20 @@
+{
+  "name": "ark-vet",
+  "interface": {
+    "displayName": "ARK Veterinaria"
+  },
+  "plugins": [
+    {
+      "name": "ark-vet",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ark-vet"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

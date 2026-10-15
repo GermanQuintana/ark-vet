@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ark": {
+      "command": "node",
+      "args": [
+        "./dist/index.js"
+      ],
+      "cwd": "./mcp-server"
+    }
+  }
+}
