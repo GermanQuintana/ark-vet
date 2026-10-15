@@ -10,6 +10,7 @@ Si necesitas registrar el catálogo desde Codex CLI:
 
 ```powershell
 codex plugin marketplace add GermanQuintana/ark-vet
+codex plugin add ark-vet@ark-vet
 ```
 
 Después abre Plugins y selecciona **ARK Gestión Veterinaria** dentro de **ARK Veterinaria** para instalarlo. La disponibilidad de instalación y de configuración depende de las funciones habilitadas en tu versión de Codex y de las políticas de tu cuenta.
