@@ -1,6 +1,6 @@
 {
   "name": "ark-vet",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "MCP y skills para ARK Gestión Veterinaria. Configuración local por clínica.",
   "author": {
     "name": "Germán Quintana"
@@ -10,8 +10,8 @@
     "com.openai": {
       "interface": {
         "displayName": "ARK Gestión Veterinaria",
-        "shortDescription": "Consultas y compras en ARK con configuración guiada",
-        "longDescription": "Conecta tu instalación de ARK. Consulta clínica, almacén y proveedores; prepara compras y pedidos con confirmación expresa.",
+        "shortDescription": "Consultas, compras y revisión de tarifas en ARK",
+        "longDescription": "Consulta clínica, almacén y proveedores; revisa tarifas y prepara cambios con vista previa y confirmación explícita.",
         "developerName": "Germán Quintana",
         "category": "Productivity",
         "capabilities": [
@@ -21,7 +21,8 @@
         "defaultPrompt": [
           "Configura mi conexión a ARK.",
           "Consulta el stock de un artículo.",
-          "Prepara una compra desde un albarán."
+          "Prepara una compra desde un albarán.",
+          "Revisa esta tarifa y prepara los cambios para confirmar."
         ]
       },
       "onboardingSkill": "./skills/setup/SKILL.md",

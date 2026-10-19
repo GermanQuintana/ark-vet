@@ -1,6 +1,6 @@
 # ARK Gestión Veterinaria
 
-Plugin para Codex de escritorio con servidor MCP local y skills de clínica, almacén, compras y configuración inicial. Versión 0.5.0.
+Plugin para Codex de escritorio con servidor MCP local y skills de clínica, almacén, compras y configuración inicial. Versión del plugin 0.5.1 (skills; MCP sin cambios).
 
 ## Instalar
 
@@ -54,3 +54,11 @@ Desde `plugins/ark-vet/mcp-server`: `npm ci`, `npm run build`, `npm run test:smo
 Las referencias a centros, empleados y convenciones de una clínica concreta deben mantenerse en una adaptación privada. El nombre del autor identifica al desarrollador y no es una configuración de acceso.
 
 Para compartir, usa el repositorio público. La variante privada se identifica por un marketplace distinto; no actives ambas variantes simultáneamente en el mismo chat.
+
+## Tarifas de proveedores y edición de productos
+
+La skill **Precios proveedores** (`$precios-proveedores`) revisa PDF, imágenes y Excel, cruza artículos y existencias y prepara cambios de coste, PVP y nombre interno. Mantiene el margen histórico fiable de tarifa 1; la tarifa 2 de personal queda a coste, con redondeo hacia arriba y margen objetivo del 0–2 %. Un PVP explícito del usuario se respeta y se informa del margen resultante. Al cambiar precios, añade o sustituye el año de revisión del nombre interno; conserva la descripción externa.
+
+**Flujo:** revisar → mostrar tabla anterior/propuesto → esperar confirmación explícita → aplicar solo lo aprobado → verificar lo guardado. Una confirmación cubre la tanda presentada; los cambios materiales requieren nueva revisión de lo afectado. No se rellenan ni guardan campos antes de confirmar.
+
+El MCP actual no incorpora edición de artículos existentes. Si hay navegador accesible con ARK en el mismo centro y permisos adecuados, la skill puede aplicar allí los cambios tras confirmarlos y contrastar el resultado con el MCP. Si no hay vía de edición, entrega la propuesta pendiente sin afirmar que está aplicada. No se crean compras ni entradas de stock para simular una edición de precios. No se incluyen datos reales ni credenciales en esta mejora.
